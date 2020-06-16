@@ -17,5 +17,5 @@ steps:
 
 - script: |
     npm install
-    npm run build $(Build.SourceVersion) $(System.JobId)
+    npm run build $(Build.SourceVersion) $(System.JobId) ${System.PullRequest.PullRequestNumber}
   displayName: 'npm install and build'
