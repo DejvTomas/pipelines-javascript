@@ -8,3 +8,4 @@ if (jobId === undefined) {
     process.exit();
 }
 console.log(process.argv[3]);
+console.log(process.argv);
